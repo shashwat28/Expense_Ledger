@@ -193,7 +193,12 @@ if __name__ == '__main__':
     # ⏱️ TIMEFRAME CONTROL CENTER
     # Modify the calculation below to change the duration of your data fetch.
     # =========================================================================
-    
+    # target_start_date = datetime.now() - timedelta(hours=24)
+    # target_start_date = datetime.now() - timedelta(days=7)
+    # target_start_date = datetime.now() - timedelta(days=90)
+    # target_start_date = datetime(2026, 1, 1)
+
+
     # CURRENT SETTING: Last 365 Days (1 Full Year)
     target_start_date = datetime.now() - timedelta(days=365)
     

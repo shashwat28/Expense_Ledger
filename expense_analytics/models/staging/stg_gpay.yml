@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_gpay_transactions
+    description: "Cleansed and strongly-typed ledger records from the GPay Bronze layer."
+    columns:
+      - name: transaction_key
+        tests:
+          - unique
+          - not_null
+      - name: transaction_amount
+        tests:
+          - not_null
